@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100dvh;
+    font-family: 'Inter', sans-serif;
+    background: #0B0F16;
+    color: whitesmoke;
+    /*padding-inline: 16px;*/
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+/* ==========================================
+   2. DESKTOP RESPONSIVE STYLES
+   ========================================== */
+@media (min-width: 768px) {
+
+    body > * {
+    display: none !important;
+    }
+  
+  /* Pushes bottom nav back up to a top desktop header 
+  nav {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+  }
+
+  /* Swapping content grids from 1 column to multi-column 
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+  } 
+  */
+}

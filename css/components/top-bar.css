@@ -1,0 +1,53 @@
+/*===============================================================
+                         TOP SECTION
+================================================================*/
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.hamburger-menu {
+    /*padding: 16px;*/
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: aliceblue;
+}
+
+.EdgeTracker-logo {
+    width: 108px;
+}
+.EdgeTracker-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 10px;
+  color: white; 
+  border: 1px solid #2A3441;
+  border-radius: 16px;
+  padding: 2px 12px;
+}
+
+.dot-online {
+  width: 6px;
+  height: 6px;
+  background-color: #22C55E; 
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.notification-bell {
+    font-size: 24px;
+    cursor: pointer;
+}
