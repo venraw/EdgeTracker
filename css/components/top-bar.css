@@ -7,6 +7,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
 }
 
 .hamburger-menu {
@@ -15,7 +21,7 @@
     cursor: pointer;
     background: none;
     border: none;
-    color: aliceblue;
+    color: aliceblue;   
 }
 
 .EdgeTracker-logo {

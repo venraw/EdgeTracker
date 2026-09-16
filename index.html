@@ -73,23 +73,147 @@
     <!-- ======================================================================= -->
     <!-- HAMBURGER MENU                                                       -->
     <!-- ======================================================================= -->
-    <!------
-    <div class="hamburger-menu">
 
-        <div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="hamburger-menu-list">
 
-            <button profile-btn>
-                <div class="profile-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                    <path d="M12 11a5 5 0 1 0-5-5 5.006 5.006 0 0 0 5 5zm0-8a3 3 0 1 1-3 3 3 3 0 0 1 3-3zm8 20H4a1 1 0 0 1-1-1v-4a5.006 5.006 0 0 1 5-5h8a5.006 5.006 0 0 1 5 5v4a1 1 0 0 1-1 1zm-15-5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3H5z"/>
-                    </svg>
+        <div class="account-section">
+            <h5>ACCOUNT</h5>
+            <button class="profile-btn">
+                <div class="icon-text">
+                    <div class="profile-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 11a5 5 0 1 0-5-5 5.006 5.006 0 0 0 5 5zm0-8a3 3 0 1 1-3 3 3 3 0 0 1 3-3zm8 20H4a1 1 0 0 1-1-1v-4a5.006 5.006 0 0 1 5-5h8a5.006 5.006 0 0 1 5 5v4a1 1 0 0 1-1 1zm-15-5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v3H5z"/>
+                        </svg>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Profile</h3>
+                        <p>manage your profile</p>
+                    </div>
                 </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
             </button>
 
+            <button class="trading-account">
+                <div class="icon-text">
+                    <div class="profile-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 925.1 925.1" width="24" height="24" fill="currentColor">
+                        <path d="M453.5 26.514l-345.6 187.3 15.2-3.8 412.9-104.7-35-64.6c-9.2-17.1-30.5-23.401-47.5-14.2zM780.9 222.313l-26.2-103.4c-4-15.9-18.3-26.4-33.9-26.4-2.8 0-5.7.3-8.6 1.1l-160.5 40.7-347.4 88.1h402.6h181.5v0zM546.7 665.513v-176c0-36.699 29.8-66.5 66.5-66.5h264.8v-135.7c0-19.3-15.7-35-35-35H35c-12.9 0-24.1 7-30.2 17.3-3 5.2-4.8 11.2-4.8 17.7v580.5c0 19.301 15.7 35 35 35h807.9c19.3 0 35-15.699 35-35V732.114H613.2c-36.7 0-66.5-29.9-66.5-66.601zM908 459.513c-4.5-2.699-9.6-4.3-15-4.8-1-.1-1.9-.1-2.9-.1H613.2c-19.3 0-35 15.7-35 35v176c0 19.299 15.7 35 35 35H890.1c1 0 1.9-.102 2.9-.102 5.4-.398 10.5-2.1 15-4.799 10.2-6.1 17.1-17.301 17.1-30.1v-176c0-12.801-6.9-24-17.1-30.101zM700.5 634.313c-31.3 0-56.8-25.4-56.8-56.801 0-31.299 25.399-56.799 56.8-56.799s56.8 25.4 56.8 56.799c0 31.401-25.4 56.801-56.8 56.801z"/>
+                        </svg>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Trading Account</h3>
+                        <p class="live-connect">Connected: MT5 Live</p>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
         </div>
 
+        <div class="account-section">
+            <h5>TRADING TOOLS</h5>
+            <button class="profile-btn">
+                <div class="icon-text">
+                    <div class="profile-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1920" width="24" height="24" fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M480 106.667c-117.82 0-213.333 95.512-213.333 213.333v1280c0 117.82 95.512 213.333 213.333 213.333h960c117.82 0 213.333-95.512 213.333-213.333V320c0-117.82-95.512-213.333-213.333-213.333H480ZM480 0h960c176.731 0 320 143.269 320 320v1280c0 176.731-143.269 320-320 320H480c-176.731 0-320-143.269-320-320V320C160 143.269 303.269 0 480 0Zm106.667 320C527.757 320 480 367.756 480 426.667v106.666C480 592.243 527.756 640 586.667 640h746.666c58.91 0 106.667-47.756 106.667-106.667V426.667c0-58.91-47.756-106.667-106.667-106.667H586.667Zm0-106.667h746.666c117.821 0 213.334 95.513 213.334 213.334v106.666c0 117.821-95.513 213.334-213.334 213.334H586.667c-117.821 0-213.334-95.513-213.334-213.334V426.667c0-117.821 95.513-213.334 213.334-213.334ZM480 853.333h106.667c58.91 0 106.666 47.757 106.666 106.667 0 58.91-47.756 106.667-106.666 106.667H480c-58.91 0-106.667-47.757-106.667-106.667 0-58.91 47.757-106.667 106.667-106.667Zm426.667 0h106.666C1072.243 853.333 1120 901.09 1120 960c0 58.91-47.756 106.667-106.667 106.667H906.667C847.757 1066.667 800 1018.91 800 960c0-58.91 47.756-106.667 106.667-106.667Zm426.666 0H1440c58.91 0 106.667 47.757 106.667 106.667 0 58.91-47.757 106.667-106.667 106.667h-106.667c-58.91 0-106.666-47.757-106.666-106.667 0-58.91 47.756-106.667 106.666-106.667Zm-853.333 320h106.667c58.91 0 106.666 47.757 106.666 106.667 0 58.91-47.756 106.667-106.666 106.667H480c-58.91 0-106.667-47.757-106.667-106.667 0-58.91 47.757-106.667 106.667-106.667Zm426.667 0h106.666c58.91 0 106.667 47.757 106.667 106.667 0 58.91-47.756 106.667-106.667 106.667H906.667C847.757 1386.667 800 1338.91 800 1280c0-58.91 47.756-106.667 106.667-106.667Zm426.666 0H1440c58.91 0 106.667 47.757 106.667 106.667 0 58.91-47.757 106.667-106.667 106.667h-106.667c-58.91 0-106.666-47.757-106.666-106.667 0-58.91 47.756-106.667 106.666-106.667Zm-853.333 320h106.667c58.91 0 106.666 47.757 106.666 106.667 0 58.91-47.756 106.667-106.666 106.667H480c-58.91 0-106.667-47.757-106.667-106.667 0-58.91 47.757-106.667 106.667-106.667Zm426.667 0h106.666c58.91 0 106.667 47.757 106.667 106.667 0 58.91-47.756 106.667-106.667 106.667H906.667C847.757 1706.667 800 1658.91 800 1600c0-58.91 47.756-106.667 106.667-106.667Zm426.666 0H1440c58.91 0 106.667 47.757 106.667 106.667 0 58.91-47.757 106.667-106.667 106.667h-106.667c-58.91 0-106.666-47.757-106.666-106.667 0-58.91 47.756-106.667 106.666-106.667Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Calculators</h3>
+                        <p>Pips, position size, risk & more</p>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <button class="trading-account">
+                <div class="icon-text">
+                    <div class="profile-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <!-- Top Pins -->
+                        <rect x="6" y="2" width="2" height="4" rx="1" />
+                        <rect x="16" y="2" width="2" height="4" rx="1" />
+                        
+                        <!-- Outer Body & Inner Cutout -->
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 5C4.34315 5 3 6.34315 3 8V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V8C21 6.34315 19.6569 5 18 5H6ZM5 8C5 7.44772 5.44772 7 6 7H18C18.5523 7 19 7.44772 19 8V18C19 18.5523 18.5523 19 18 19H6C5.44772 19 5 18.5523 5 18V8Z" />
+                        
+                        <!-- Text Lines / Event Bars -->
+                        <rect x="7" y="10" width="10" height="2" rx="1" />
+                        <rect x="7" y="14" width="5" height="2" rx="1" />
+                        </svg>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Calendar</h3>
+                        <p class="live-connect">Economic & P/L Calendar</p>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+
+        <div class="account-section">
+            <h5>APP</h5>
+            <button class="profile-btn">
+                <div class="icon-text">
+                    <div class="profile-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M12 15.5A3.5 3.5 0 1 1 12 8.5a3.5 3.5 0 0 1 0 7Zm7.43-2.53c.04-.32.07-.64.07-.97s-.03-.65-.07-.97l2.11-1.65a.5.5 0 0 0 .12-.64l-2-3.46a.5.5 0 0 0-.6-.22l-2.49 1a7.3 7.3 0 0 0-1.68-.97l-.38-2.65a.49.49 0 0 0-.49-.42h-4a.49.49 0 0 0-.49.42l-.38 2.65c-.6.24-1.17.57-1.68.97l-2.49-1a.5.5 0 0 0-.6.22l-2 3.46a.5.5 0 0 0 .12.64l2.11 1.65c-.04.32-.07.65-.07.97s.03.65.07.97L2.7 14.62a.5.5 0 0 0-.12.64l2 3.46c.14.24.42.32.6.22l2.49-1c.51.4 1.08.73 1.68.97l.38 2.65c.05.24.26.42.49.42h4c.24 0 .44-.18.49-.42l.38-2.65c.6-.24 1.17-.57 1.68-.97l2.49 1c.24.1.47 0 .6-.22l2-3.46a.5.5 0 0 0-.12-.64l-2.11-1.65Z"/>
+                        </svg>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Settings</h3>
+                        <p>Manage app preferences</p>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <button class="trading-account">
+                <div class="icon-text">
+                    <div class="profile-icon">
+                       <i class="fa-regular fa-circle-question"></i>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Help & Support</h3>
+                        <p class="live-connect">FAQs, guides & contact us</p>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+
+        <button class="trading-account">
+                <div class="icon-text">
+                    <div class="profile-icon">
+                       <i class="fa-regular fa-circle-question"></i>
+                    </div>
+
+                    <div class="card-text">
+                        <h3>Log out</h3>
+                        <p class="live-connect">FAQs, guides & contact us</p>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        
+
     </div>
-    ---->
 
     
 
@@ -97,6 +221,7 @@
     <!-- MENU DRAWER                                                         -->
     <!-- ======================================================================= -->
 
+    <div class="drawer-overlay" id="drawerOverlay"></div>
     <div class="menu-drawer">
         <div class="top-text">
             <h2>Create</h2>
@@ -244,6 +369,8 @@
     </nav>
 
 
+   
+    
     <script src="js/components/menu-drawer.js" defer></script>
 
 </body>

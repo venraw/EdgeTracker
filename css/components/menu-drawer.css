@@ -82,12 +82,6 @@ body {
     bottom: 0;
     z-index: 200;
 
-    /*
-    backdrop-filter: blur(4px);
-    opacity: 0;
-    visibility: hidden;*/
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,7 +89,6 @@ body {
     gap: 16px;
     padding: 32px 16px;
     border-radius: 24px 24px 0 0;
-    border: 1px solid #2A3441;
     border-bottom: none;
     border-inline: none;
     background: #151B23;
@@ -103,6 +96,11 @@ body {
     /*margin-inline: 16px;*/
     /*width: 100%;
     box-sizing: border-box;*/
+    /*border: 1px solid #2A3441;*/
+      /*
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    visibility: hidden;*/
 
     transform: translateY(100%);
     transition: transform 0.4s ease-in-out;
@@ -115,4 +113,174 @@ body {
 .menu-drawer-backdrop.active {
     opacity: 1;
     visibility: visible;
+}
+
+.menu-overlay {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+
+}
+.menu-overlay.open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+
+
+/*==============================================================
+                       HAMBURGER MENU
+===============================================================*/
+/*
+.hamburger-menu { 
+    display: flex;
+    align-items: center;
+    background: #151B23;
+} */
+
+.profile-btn, .trading-account {
+    background: #1E2530;
+    border: 1px solid #2A3441;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 266px;
+    height: 4.625rem;
+    padding: 16px;
+    
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile-icon {
+    background-color: rgba(34 197 94 / 0.2);
+    padding: 8px;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #22C55E;
+    border-radius: 8px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-text h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #F8FAFC;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+.card-text p {
+    font-size: 10px;
+    color: #7B8794;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.profile-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+}
+
+.profile-btn {
+    margin-bottom: 8px;
+}
+
+.account-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 266px;
+}
+
+.hamburger-menu-list{
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 16px;
+    background: #151B23;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    z-index: 200;
+
+    overflow-y: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+.hamburger-menu-list.open {
+    transform: translateX(0);
+}
+
+.account-section h5 {
+    margin-bottom: 16px;
+    color: #7B8794;
+}
+.fa-regular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+}
+
+.drawer-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.drawer-overlay.open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
