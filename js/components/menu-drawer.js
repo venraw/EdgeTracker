@@ -84,6 +84,8 @@ drawer.addEventListener('touchend', () => {
     }
 });
 
+
+
 function closeMenu() {
     drawer.classList.remove('open');
     overlay.classList.remove('open');

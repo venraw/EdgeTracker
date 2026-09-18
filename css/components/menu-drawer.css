@@ -223,7 +223,7 @@ body {
 }
 
 .card-text4 p {
-    color: #EF4444;
+    color: rgba(239, 68, 68, 0.6);
 }
 
 .profile-icon svg, .profile-icon4 svg {
@@ -288,6 +288,7 @@ body {
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
     touch-action: pan-y;
+    -webkit-overflow-scrolling: touch;
 }
 .hamburger-menu-list.open {
     transform: translateX(0);
@@ -324,4 +325,8 @@ body {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+}
+
+.card-text .live-connect1 {
+    color: #22C55E;
 }
