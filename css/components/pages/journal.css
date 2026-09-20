@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .head-items {
     display: flex;
     align-items: center;
@@ -35,13 +38,15 @@
 
 .menu1 svg{
     color: #0B0F16;
-    width: 18px;
-    height: 18px;
+    --icon-size: clamp(16px, 4vw, 24px);
+    width: var(--icon-size);
+    height: var(--icon-size);
 }
 .menu2 svg{
     color: #7B8794;
-    width: 18px;
-    height: 18px;
+    --icon-size: clamp(16px, 4vw, 24px);
+    width: var(--icon-size);
+    height: var(--icon-size);
 }
 
 .menu-text1 {
@@ -53,6 +58,11 @@
     color: #F8FAFC;
     font-size: 10px;
     font-weight: 500;
+}
+
+.menu-text1, .menu-text2 {
+    font-size: clamp(9px, 2.2vw, 10px); 
+    white-space: nowrap;
 }
 
 .notification {
@@ -70,16 +80,26 @@
     height: 18px;
 }
 
+.notification {
+    width: clamp(14px, 4vw, 18px);
+    height: clamp(14px, 4vw, 18px);
+    font-size: clamp(9px, 2.5vw, 12px);
+}
+
 .journal-planned1, .journal-planned2 {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 8px;
-    padding: 8px;
-    width: 109px;
+    gap: clamp(8px, 1.5vw, 8px);
+    padding: clamp(6px, 2vw, 8px);
+    /*width: 109px;*/
+    min-width: 0;
+    flex: 1 1 0;
+    width: 100%;
     height: auto;
     border-radius: 60px;
+    box-sizing: border-box;
 }
 
 .journal-planned1 {
@@ -94,5 +114,9 @@
     display: flex;
     align-items: center;
     padding-inline: 16px;
-    justify-content: space-between;
+    justify-content: center;
+    /*justify-content: space-between;*/
+    gap: 8px;
+    max-width: 480px;  
+    margin-inline: auto; 
 }
